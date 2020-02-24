@@ -38,9 +38,21 @@ Once the similarity between track pairs is calculated the track pairs with simil
 <h2> Essential Fucntions </h2>
 
 <p>This is the <code>Panel</code> constructor:</p>
-<pre><code>def get_similar_tracks(artist_pair = [ '2Pac', 'Pink Floyd' ], get_related = True, scaleing = None, 
-                       sim_metric = 'cosine', random_top_tracks = False );
-}</code></pre>
+<pre><code>def get_similar_tracks(artist_pair, # A list containing the name of two artists to base the playlist on
+                                  get_related = True, # Whether or not to pull tracks from related artists 
+                                  scaleing = None, # Whether to scale the data prior to calculating similarity
+                                  sim_metric = 'cosine', # Distance metric used to calculate similarity
+                                  random_top_tracks = False # Whether to take the most similar tracks or to randomly choose from 75'th                                                               #percentile
+                                  )
+</code></pre>
+
+<pre><code>def get_similar_tracks(artist_pair, # A list containing the name of two artists to base the playlist on
+                                  get_related = True, # Whether or not to pull tracks from related artists 
+                                  scaleing = None, # Whether to scale the data prior to calculating similarity
+                                  sim_metric = 'cosine', # Distance metric used to calculate similarity
+                                  random_top_tracks = False # Whether to take the most similar tracks or to randomly choose from 75'th                                                               #percentile
+                                  )
+</code></pre>
 
 <h2> References </h1>
 
