@@ -39,8 +39,6 @@ Once the similarity between track pairs is calculated the track pairs with simil
 
 <h2> Essential Fucntions </h2>
 
-<p>This is the <code>Panel</code> constructor:</p>
-
 <pre><code>
 def get_similar_tracks(artist_pair,              # A list containing the name of two artists to base the playlist on
                        get_related = True,       # Whether or not to pull tracks from related artists 
