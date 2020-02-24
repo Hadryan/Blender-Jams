@@ -37,11 +37,12 @@ Once the similarity between track pairs is calculated the track pairs with simil
 
 <h2> Essential Fucntions </h2>
 
-<code>
-     
-A piece of computer code
-
-</code>
+<p>This is the <code>Panel</code> constructor:</p>
+<pre><code>function Panel(element, canClose, closeHandler) {
+  this.element = element;
+  this.canClose = canClose;
+  this.closeHandler = function () { if (closeHandler) closeHandler() };
+}</code></pre>
 
 <h2> References </h1>
 
