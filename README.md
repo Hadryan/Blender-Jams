@@ -52,6 +52,19 @@ def create_playlist( track_ids,                             # Output from get_si
                      replace = True )                       # If a playlist with the same name exists, whether to replace the tracks in it
 </code></pre>
 
+<h2> Next Steps </h2> 
+
+Blender Jams creates a great starting point for discorvering new music, but several imporvements can be made. Future improvements could include the following: 
+
+- Testing new distance metrics such as smoothed cosine
+- Testing embeddings such as UMAP, t-SNE, and PCA
+- Weighting recommendations by artist and song popularity
+- Distributional analysis of audio features to measure recommendation perfromance
+- Taking into consideration where the intersection between two artists occurs with a dividing hyperplane
+- Exploring other song selection models sucha as logistic regression 
+- Looking at the value added by cluster analysis
+- Refining code to be more efficient and easier to use
+
 <h2> References </h1>
 
 1. Spotipy: https://spotipy.readthedocs.io/en/latest/# 
