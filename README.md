@@ -39,15 +39,19 @@ Once the similarity between track pairs is calculated the track pairs with simil
 
 <p>This is the <code>Panel</code> constructor:</p>
 
-<pre><code>def get_similar_tracks(artist_pair,              # A list containing the name of two artists to base the playlist on
-                                  get_related = True,       # Whether or not to pull tracks from related artists 
-                                  scaleing = None,          # Whether to scale the data prior to calculating similarity
-                                  sim_metric = 'cosine',    # Distance metric used to calculate similarity
-                                  random_top_tracks = False # Whether to take the most similar tracks or to randomly choose from 75'th percentile
-                                  )
+<pre><code>
+def get_similar_tracks(artist_pair,              # A list containing the name of two artists to base the playlist on
+                       get_related = True,       # Whether or not to pull tracks from related artists 
+                       scaleing = None,          # Whether to scale the data prior to calculating similarity
+                       sim_metric = 'cosine',    # Distance metric used to calculate similarity
+                       random_top_tracks = False # Whether to take the most similar tracks or to randomly choose from 75'th percentile
+                       )
 
-def create_playlist( track_ids, playlist_name = 'Blender Playlist', replace = True )
+def create_playlist( track_ids,                             # Output from get_similar_tracks(...)
+                     playlist_name = 'Blender Playlist',    # Name of the playlist
+                     replace = True )                       # If a playlist with the same name exists, whether to replace the tracks in it
 </code></pre>
+
 <h2> References </h1>
 
 1. Spotipy: https://spotipy.readthedocs.io/en/latest/# 
