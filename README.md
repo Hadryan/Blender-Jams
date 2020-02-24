@@ -37,7 +37,11 @@ Once the similarity between track pairs is calculated the track pairs with simil
 
 <h2> Essential Fucntions </h2>
 
-<code>A piece of computer code</code>
+<code>
+     
+A piece of computer code
+
+</code>
 
 <h2> References </h1>
 
