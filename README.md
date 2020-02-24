@@ -1,4 +1,4 @@
-# Blender-Jams
+# Blender Jams
 
 <h2> Introduction </h2>
 
@@ -16,7 +16,26 @@ Similarity between songs is based on the Audio Features provided by Spotify. The
 - valence
 - tempo
 
-References: 
+<h2> Methods </h1> 
+
+The first step in the process is to specify the two artists to base the playlist around. Given that most people don't want a playlist that only contains two artists, the ability to pull songs from realted artists was added. Once artist and song data is pulled that information is used to pull audio information for each of the tracks. 
+
+To increase the exploratory capabilites of Blender Jams, the ability to explore different standardization techniques and distance metrics was built into the tool. The available standardiztion techniques and distance metrics are given below. 
+
+- Standardiztion Techniques:
+     - None
+     - Center: Mean center the data
+     - Standardize: Mean center the data and then scale by the standard deviation
+- Distance Metrics:
+     - Cosine: Cosine similarity between track pairs
+     - Euclidean: Euclidean distance between track pairs
+     - Both: An experimental metric calculated as Cosine*(1/Euclidean)
+     
+
+
+
+<h2> References </h1>
+
 1. Spotipy: https://spotipy.readthedocs.io/en/latest/# 
      - Used to interact with the Spotify API
 2. https://scikit-learn.org/stable/
