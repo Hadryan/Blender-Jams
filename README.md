@@ -6,27 +6,22 @@ Blender Jams utilizes the Spotify API and Spotipy to pull song and artists data 
 
 Similarity between songs is based on the Audio Features provided by Spotify. The audio features that were used to calculated similarity in this tool include the following: 
 
-<ul>
-  <li>Coffee</li>   <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
-acousticness
-danceability
-energy
-instrumentalness
-liveness
-loudness
-speachiness
-valence
-tempo
+- acousticness
+- danceability
+- energy
+- instrumentalness
+- liveness
+- loudness
+- speachiness
+- valence
+- tempo
 
 References: 
 1. Spotipy: https://spotipy.readthedocs.io/en/latest/# 
      - Used to interact with the Spotify API
 2. https://scikit-learn.org/stable/
-  - Used for PCA, Cosine Similarity, and Euclidean distance metrics
+     - Used for PCA, Cosine Similarity, and Euclidean distance metrics
 3. https://developer.spotify.com/documentation/web-api/
-  - Spotify API used to pull song data and create customized playlists
+     - Spotify API used to pull song data and create customized playlists
 
 
