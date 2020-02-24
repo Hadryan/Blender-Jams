@@ -38,10 +38,8 @@ Once the similarity between track pairs is calculated the track pairs with simil
 <h2> Essential Fucntions </h2>
 
 <p>This is the <code>Panel</code> constructor:</p>
-<pre><code>function Panel(element, canClose, closeHandler) {
-  this.element = element;
-  this.canClose = canClose;
-  this.closeHandler = function () { if (closeHandler) closeHandler() };
+<pre><code>def get_similar_tracks(artist_pair = [ '2Pac', 'Pink Floyd' ], get_related = True, scaleing = None, 
+                       sim_metric = 'cosine', random_top_tracks = False );
 }</code></pre>
 
 <h2> References </h1>
