@@ -1,7 +1,25 @@
 # Blender-Jams
 
-<h1> Introduction </h1>
-A tool that uses Spotipy and the Spotify API to produce custom user playlists that finds similar songs between two pre-specified artists
+<h2> Introduction </h2>
+
+Blender Jams utilizes the Spotify API and Spotipy to pull song and artists data from Spotify. The purpose of Blender Jams is to allow users to automatically create customized playlists that are based on two artists, which are referred to as base artists. Once the base artists are specified, users can choose to search for songs only produced by the base artists or can choose to also look at songs from related artists. Blender Jams can use a combination of standardization techniques and basic distance metrics to calculate similarity between songs.
+
+Similarity between songs is based on the Audio Features provided by Spotify. The audio features that were used to calculated similarity in this tool include the following: 
+
+<ul>
+  <li>Coffee</li>   <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+acousticness
+danceability
+energy
+instrumentalness
+liveness
+loudness
+speachiness
+valence
+tempo
 
 References: 
 1. Spotipy: https://spotipy.readthedocs.io/en/latest/# 
